@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3e409add-02d0-4e85-84de-7e952c265c0e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +126,7 @@
       <updated>1612014273098</updated>
       <workItem from="1612014284018" duration="7509000" />
       <workItem from="1612274162881" duration="13409000" />
-      <workItem from="1612465357433" duration="1107000" />
+      <workItem from="1612465357433" duration="2068000" />
     </task>
     <task id="LOCAL-00001" summary="first commit with basic function(schedule for today and for week)">
       <created>1612280858994</created>
@@ -150,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612290560061</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added schedule for6 semester">
+      <created>1612466784936</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1612466784936</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,13 +164,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit with basic function(schedule for today and for week)" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit with basic function(schedule for today and for week)" />
+    <MESSAGE value="added schedule for6 semester" />
+    <option name="LAST_COMMIT_MESSAGE" value="added schedule for6 semester" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="555" y="81" key="CommitChangelistDialog2" timestamp="1612290559877">
+    <state x="703" y="305" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612468328358">
       <screen x="0" y="0" width="1920" height="1026" />
     </state>
-    <state x="555" y="81" key="CommitChangelistDialog2/0.0.1920.1026@0.0.1920.1026" timestamp="1612290559877" />
+    <state x="703" y="305" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1026@0.0.1920.1026" timestamp="1612468328358" />
+    <state x="555" y="81" key="CommitChangelistDialog2" timestamp="1612466784760">
+      <screen x="0" y="0" width="1920" height="1026" />
+    </state>
+    <state x="555" y="81" key="CommitChangelistDialog2/0.0.1920.1026@0.0.1920.1026" timestamp="1612466784760" />
     <state x="188" y="88" key="DiffContextDialog" timestamp="1612293147393">
       <screen x="0" y="0" width="1920" height="1026" />
     </state>
@@ -197,10 +208,10 @@
       <screen x="0" y="0" width="1920" height="1026" />
     </state>
     <state x="685" y="247" width="540" height="540" key="StructurePopup/0.0.1920.1026@0.0.1920.1026" timestamp="1612274403003" />
-    <state x="556" y="245" key="Vcs.Push.Dialog.v2" timestamp="1612293192488">
+    <state x="556" y="245" key="Vcs.Push.Dialog.v2" timestamp="1612466795678">
       <screen x="0" y="0" width="1920" height="1026" />
     </state>
-    <state x="556" y="245" key="Vcs.Push.Dialog.v2/0.0.1920.1026@0.0.1920.1026" timestamp="1612293192488" />
+    <state x="556" y="245" key="Vcs.Push.Dialog.v2/0.0.1920.1026@0.0.1920.1026" timestamp="1612466795678" />
     <state x="771" y="270" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1612280835129">
       <screen x="0" y="0" width="1920" height="1026" />
     </state>
