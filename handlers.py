@@ -18,7 +18,7 @@ async def greeting(message: Message):
 
 @dp.message_handler(commands=['help'])
 async def show_commands(message: Message):
-    text = "Ничего нельзя тут делать."
+    text = "Пока только расписание на сегодня и на недельку(((((((("
     await message.answer(text=text, reply_markup=global_menu)
 
 @dp.message_handler(text='Расписание на сегодня')
