@@ -65,7 +65,7 @@ async def show_tomorrow_schedule(message: Message):
     if week_count % 2 == 0:
         for weekday, classes in schedule_odd.items():
             if weekday == tomorrow:
-                tomorrow_schedule = '\n'.join(classes)
+                tomorrow_schedule = '\n'.join(classes).lower()
             if tomorrow == 6 or tomorrow == 7:
                 tomorrow_schedule = 'Завтра выходной'
                 break
@@ -73,7 +73,7 @@ async def show_tomorrow_schedule(message: Message):
     if week_count % 2 != 0:
         for weekday, classes in schedule_even.items():
             if weekday == tomorrow:
-                tomorrow_schedule = '\n'.join(classes)
+                tomorrow_schedule = '\n'.join(classes).lower()
             if tomorrow == 6 or tomorrow == 7:
                 tomorrow_schedule = 'Завтра выходной'
                 break
