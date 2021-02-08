@@ -29,17 +29,17 @@ async def show_today_schedule(message: Message):
     from datetime import datetime
     week_count = datetime.now().isocalendar()[1]
     today = datetime.isoweekday(datetime.now())
-    # нечетная неделя
+    # четная неделя
     if week_count % 2 == 0:
-        for weekday, classes in schedule_odd.items():
+        for weekday, classes in schedule_even.items():
             if weekday == today:
                 today_schedule = '\n'.join(classes)
             if today == 6 or today == 7:
                 today_schedule = 'Сегодня выходной'
                 break
-    # четная неделя
+    # нечетная неделя
     if week_count % 2 != 0:
-        for weekday, classes in schedule_even.items():
+        for weekday, classes in schedule_odd.items():
             if weekday == today:
                 today_schedule = '\n'.join(classes)
             if today == 6 or today == 7:
@@ -61,17 +61,17 @@ async def show_tomorrow_schedule(message: Message):
     tomorrow = datetime.isoweekday(datetime.now()) + 1
     if tomorrow == 8:
         tomorrow = 1
-    # нечетная неделя
+    # четная неделя
     if week_count % 2 == 0:
-        for weekday, classes in schedule_odd.items():
+        for weekday, classes in schedule_even.items():
             if weekday == tomorrow:
                 tomorrow_schedule = '\n'.join(classes).lower()
             if tomorrow == 6 or tomorrow == 7:
                 tomorrow_schedule = 'Завтра выходной'
                 break
-    # четная неделя
+    # нечетная неделя
     if week_count % 2 != 0:
-        for weekday, classes in schedule_even.items():
+        for weekday, classes in schedule_odd.items():
             if weekday == tomorrow:
                 tomorrow_schedule = '\n'.join(classes).lower()
             if tomorrow == 6 or tomorrow == 7:
@@ -91,17 +91,17 @@ async def show_week_schedule(message: Message):
     from datetime import datetime
     week_count = datetime.now().isocalendar()[1]
     week_schedule = []
-    # Нечетная неделя
+    # четная неделя
     if week_count % 2 == 0:
-        for weekday, classes in schedule_odd.items():
+        for weekday, classes in schedule_even.items():
             for weekday_number, weekday_name in weekdays_iteration.items():
                 if weekday == weekday_number:
                     weekday = weekday_name
             week_schedule_for_day = weekday + ':' + '\n' + '\n'.join(classes).lower()
             week_schedule.append(week_schedule_for_day)
-    # Четная неделя
+    # Нечетная неделя
     if week_count % 2 != 0:
-        for weekday, classes in schedule_even.items():
+        for weekday, classes in schedule_odd.items():
             for weekday_number, weekday_name in weekdays_iteration.items():
                 if weekday == weekday_number:
                     weekday = weekday_name
@@ -122,17 +122,17 @@ async def show_week_schedule(message: Message):
     from datetime import datetime
     week_count = datetime.now().isocalendar()[1] + 1
     week_schedule = []
-    # Нечетная неделя
+    # четная неделя
     if week_count % 2 == 0:
-        for weekday, classes in schedule_odd.items():
+        for weekday, classes in schedule_even.items():
             for weekday_number, weekday_name in weekdays_iteration.items():
                 if weekday == weekday_number:
                     weekday = weekday_name
             week_schedule_for_day = weekday + ':' + '\n' + '\n'.join(classes).lower()
             week_schedule.append(week_schedule_for_day)
-    # Четная неделя
+    # нечетная неделя
     if week_count % 2 != 0:
-        for weekday, classes in schedule_even.items():
+        for weekday, classes in schedule_odd.items():
             for weekday_number, weekday_name in weekdays_iteration.items():
                 if weekday == weekday_number:
                     weekday = weekday_name

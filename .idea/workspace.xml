@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3e409add-02d0-4e85-84de-7e952c265c0e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +133,8 @@
       <workItem from="1612548512089" duration="285000" />
       <workItem from="1612550510701" duration="6916000" />
       <workItem from="1612646139751" duration="1615000" />
-      <workItem from="1612703238642" duration="5730000" />
+      <workItem from="1612703238642" duration="6533000" />
+      <workItem from="1612801182380" duration="368000" />
     </task>
     <task id="LOCAL-00001" summary="first commit with basic function(schedule for today and for week)">
       <created>1612280858994</created>
@@ -206,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612706565169</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added bold text">
+      <created>1612709427978</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1612709427978</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,17 +225,18 @@
     <MESSAGE value="added requirements and procfile" />
     <MESSAGE value="added runtime file" />
     <MESSAGE value="added useful links, mail_info and schedule for next week and tomorrow" />
-    <option name="LAST_COMMIT_MESSAGE" value="added useful links, mail_info and schedule for next week and tomorrow" />
+    <MESSAGE value="added bold text" />
+    <option name="LAST_COMMIT_MESSAGE" value="added bold text" />
   </component>
   <component name="WindowStateProjectService">
     <state x="703" y="305" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612468328358">
       <screen x="0" y="0" width="1920" height="1026" />
     </state>
     <state x="703" y="305" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1026@0.0.1920.1026" timestamp="1612468328358" />
-    <state x="555" y="81" key="CommitChangelistDialog2" timestamp="1612706564887">
+    <state x="555" y="81" key="CommitChangelistDialog2" timestamp="1612709427848">
       <screen x="0" y="0" width="1920" height="1026" />
     </state>
-    <state x="555" y="81" key="CommitChangelistDialog2/0.0.1920.1026@0.0.1920.1026" timestamp="1612706564887" />
+    <state x="555" y="81" key="CommitChangelistDialog2/0.0.1920.1026@0.0.1920.1026" timestamp="1612709427848" />
     <state x="188" y="88" key="DiffContextDialog" timestamp="1612293147393">
       <screen x="0" y="0" width="1920" height="1026" />
     </state>
@@ -237,22 +245,38 @@
       <screen x="0" y="0" width="1920" height="1026" />
     </state>
     <state x="744" y="271" key="FileChooserDialogImpl/0.0.1920.1026@0.0.1920.1026" timestamp="1612014332433" />
-    <state width="1874" height="324" key="GridCell.Tab.0.bottom" timestamp="1612709238970">
+    <state width="1874" height="324" key="GridCell.Tab.0.bottom" timestamp="1612710216714">
       <screen x="0" y="0" width="1920" height="1026" />
     </state>
-    <state width="1874" height="324" key="GridCell.Tab.0.bottom/0.0.1920.1026@0.0.1920.1026" timestamp="1612709238970" />
-    <state width="1874" height="324" key="GridCell.Tab.0.center" timestamp="1612709238969">
+    <state width="1874" height="324" key="GridCell.Tab.0.bottom/0.0.1920.1026@0.0.1920.1026" timestamp="1612710216714" />
+    <state width="1874" height="324" key="GridCell.Tab.0.center" timestamp="1612710216712">
       <screen x="0" y="0" width="1920" height="1026" />
     </state>
-    <state width="1874" height="324" key="GridCell.Tab.0.center/0.0.1920.1026@0.0.1920.1026" timestamp="1612709238969" />
-    <state width="1874" height="324" key="GridCell.Tab.0.left" timestamp="1612709238969">
+    <state width="1874" height="324" key="GridCell.Tab.0.center/0.0.1920.1026@0.0.1920.1026" timestamp="1612710216712" />
+    <state width="1874" height="324" key="GridCell.Tab.0.left" timestamp="1612710216708">
       <screen x="0" y="0" width="1920" height="1026" />
     </state>
-    <state width="1874" height="324" key="GridCell.Tab.0.left/0.0.1920.1026@0.0.1920.1026" timestamp="1612709238969" />
-    <state width="1874" height="324" key="GridCell.Tab.0.right" timestamp="1612709238970">
+    <state width="1874" height="324" key="GridCell.Tab.0.left/0.0.1920.1026@0.0.1920.1026" timestamp="1612710216708" />
+    <state width="1874" height="324" key="GridCell.Tab.0.right" timestamp="1612710216713">
       <screen x="0" y="0" width="1920" height="1026" />
     </state>
-    <state width="1874" height="324" key="GridCell.Tab.0.right/0.0.1920.1026@0.0.1920.1026" timestamp="1612709238970" />
+    <state width="1874" height="324" key="GridCell.Tab.0.right/0.0.1920.1026@0.0.1920.1026" timestamp="1612710216713" />
+    <state width="1874" height="324" key="GridCell.Tab.1.bottom" timestamp="1612710216717">
+      <screen x="0" y="0" width="1920" height="1026" />
+    </state>
+    <state width="1874" height="324" key="GridCell.Tab.1.bottom/0.0.1920.1026@0.0.1920.1026" timestamp="1612710216717" />
+    <state width="1874" height="324" key="GridCell.Tab.1.center" timestamp="1612710216716">
+      <screen x="0" y="0" width="1920" height="1026" />
+    </state>
+    <state width="1874" height="324" key="GridCell.Tab.1.center/0.0.1920.1026@0.0.1920.1026" timestamp="1612710216716" />
+    <state width="1874" height="324" key="GridCell.Tab.1.left" timestamp="1612710216715">
+      <screen x="0" y="0" width="1920" height="1026" />
+    </state>
+    <state width="1874" height="324" key="GridCell.Tab.1.left/0.0.1920.1026@0.0.1920.1026" timestamp="1612710216715" />
+    <state width="1874" height="324" key="GridCell.Tab.1.right" timestamp="1612710216717">
+      <screen x="0" y="0" width="1920" height="1026" />
+    </state>
+    <state width="1874" height="324" key="GridCell.Tab.1.right/0.0.1920.1026@0.0.1920.1026" timestamp="1612710216717" />
     <state x="457" y="148" key="SettingsEditor" timestamp="1612471488757">
       <screen x="0" y="0" width="1920" height="1026" />
     </state>
@@ -261,10 +285,10 @@
       <screen x="0" y="0" width="1920" height="1026" />
     </state>
     <state x="685" y="247" width="540" height="540" key="StructurePopup/0.0.1920.1026@0.0.1920.1026" timestamp="1612274403003" />
-    <state x="556" y="245" key="Vcs.Push.Dialog.v2" timestamp="1612706577063">
+    <state x="556" y="245" key="Vcs.Push.Dialog.v2" timestamp="1612709437766">
       <screen x="0" y="0" width="1920" height="1026" />
     </state>
-    <state x="556" y="245" key="Vcs.Push.Dialog.v2/0.0.1920.1026@0.0.1920.1026" timestamp="1612706577063" />
+    <state x="556" y="245" key="Vcs.Push.Dialog.v2/0.0.1920.1026@0.0.1920.1026" timestamp="1612709437766" />
     <state x="771" y="270" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1612280835129">
       <screen x="0" y="0" width="1920" height="1026" />
     </state>
@@ -277,6 +301,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/482bot$test.coverage" NAME="test Coverage Results" MODIFIED="1612469724957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/482bot$handlers.coverage" NAME="handlers Coverage Results" MODIFIED="1612279091674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/482bot$main.coverage" NAME="main Coverage Results" MODIFIED="1612709366431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/482bot$main.coverage" NAME="main Coverage Results" MODIFIED="1612801475364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
