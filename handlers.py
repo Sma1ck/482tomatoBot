@@ -18,6 +18,7 @@ async def show_commands(message: Message):
     text = "Здесь можно посмотреть расписание на один день или на неделю, найти ссылки на необходимые сервисы и узнать данные от почты"
     await message.answer(text=text, reply_markup=global_menu)
 
+
 @dp.message_handler(text='Расписание на сегодня')
 async def show_today_schedule(message: Message):
     '''
@@ -142,7 +143,6 @@ async def show_week_schedule(message: Message):
     await message.answer(text=text)
 
 
-
 @dp.message_handler(text='Полезные ссылки')
 async def show_useful_links(message: Message):
     '''
@@ -164,7 +164,7 @@ async def process_callback_kb1btn1(callback_query: callback_query):
     '''
     code = callback_query.data[4:]
     if code == 'gmail_info':
-        # await bot.answer_callback_query(callback_query.id, text='mail password')
+        await bot.answer_callback_query(callback_query.id, text='mail password')
         await bot.send_message(callback_query.from_user.id, 'login: 482groupp@gmail.com \npassword: 999999999group')
     if code == 'mailru_info':
         await bot.send_message(callback_query.from_user.id, 'login: 482group@mail.ru \npassword: 999999999group')
@@ -180,3 +180,31 @@ async def show_mail_info(message: Message):
     from config import mail_info_keyboard
     text = 'Выбери почту, от которой нужны данные:'
     await message.answer(text=text, reply_markup=mail_info_keyboard)
+
+
+@dp.message_handler(text='Назад')
+async def back_to_global_menu(message: Message):
+    '''
+    Возврат к главному меню
+    :param message:
+    :return:
+    '''
+    await message.answer(text='Главное меню', reply_markup=global_menu)
+
+
+@dp.message_handler(text='Zoom ссылки')
+async def show_zoom_links(message: Message):
+    from config import zoom_menu
+    text = 'Выбери необходимую Zoom конференцию:'
+    await message.answer(text=text, reply_markup=zoom_menu)
+
+
+# Блок ссылок на Zoom
+@dp.message_handler(text='Кафедра АПХП')
+async def aphp_zoom_link(message: Message):
+    url = 'https://us02web.zoom.us/j/89917377831?pwd=YVZnWXU5Mk1#success'
+    description = 'Код доступа:'
+    password = '072748'
+    await message.answer(text=url)
+    await message.answer(text=description)
+    await message.answer(text=password)

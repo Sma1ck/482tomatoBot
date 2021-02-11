@@ -15,11 +15,14 @@ global_menu = ReplyKeyboardMarkup(
                 KeyboardButton(text="Расписание на неделю"),
             ],
             [
-                KeyboardButton(text='Расписание на следующую неделю')
+                KeyboardButton(text='Расписание на следующую неделю'),
+            ],
+            [
+                KeyboardButton(text='Zoom ссылки'),
             ],
             [
                 KeyboardButton(text='Полезные ссылки'),
-                KeyboardButton(text='Данные от сервисов')
+                KeyboardButton(text='Данные от сервисов'),
             ],
         ],
         resize_keyboard=True
@@ -94,3 +97,20 @@ mail_info_keyboard = InlineKeyboardMarkup()
 gmail_info_btn = InlineKeyboardButton('Гугл почта', callback_data='btn_gmail_info')
 mailru_info_btn = InlineKeyboardButton('Меил.ру', callback_data='btn_mailru_info')
 mail_info_keyboard.add(gmail_info_btn, mailru_info_btn)
+
+
+# Клавиатура для Zoom ссылок
+# zoom_links_keyboard = InlineKeyboardMarkup(row_width=2)
+# aphp_btn = InlineKeyboardButton('Кафедра АПХП', url='https://us02web.zoom.us/j/89917377831?pwd=YVZnWXU5Mk1#success', callback_data='btn_aphp')
+# zoom_links_keyboard.add(aphp_btn)
+zoom_menu = ReplyKeyboardMarkup(
+    keyboard=[
+        [
+          KeyboardButton(text='Кафедра АПХП')
+        ],
+        [
+          KeyboardButton(text='Назад')
+        ],
+    ],
+    resize_keyboard=True
+)
