@@ -164,11 +164,19 @@ async def process_callback_kb1btn1(callback_query: callback_query):
     '''
     code = callback_query.data[4:]
     if code == 'gmail_info':
-        await bot.answer_callback_query(callback_query.id, text='mail password')
         await bot.send_message(callback_query.from_user.id, 'login: 482groupp@gmail.com \npassword: 999999999group')
     if code == 'mailru_info':
         await bot.send_message(callback_query.from_user.id, 'login: 482group@mail.ru \npassword: 999999999group')
-
+    if code == 'fokin':
+        await bot.send_message(callback_query.from_user.id, 'fokin_sa@mail.ru')
+    if code == 'kurkina':
+        await bot.send_message(callback_query.from_user.id, 'victoria.kurkina@gmail.com')
+    if code == 'C#':
+        await bot.send_message(callback_query.from_user.id, 'LabsandEverything@gmail.com')
+    if code == 'borisova':
+        await bot.send_message(callback_query.from_user.id, 'ekaterina_borisova@technolog.edu.ru')
+    if code == 'sociology':
+        await bot.send_message(callback_query.from_user.id, 'djv475@mail.ru')
 
 @dp.message_handler(text='Данные от сервисов')
 async def show_mail_info(message: Message):
@@ -208,3 +216,10 @@ async def aphp_zoom_link(message: Message):
     await message.answer(text=url)
     await message.answer(text=description)
     await message.answer(text=password)
+
+
+@dp.message_handler(text='Почты преподавателей')
+async def show_teachers_mails(message:Message):
+    from config import teachers_mails_keyboard
+    text = 'Выбери преподавателя или предмет:'
+    await message.answer(text=text, reply_markup=teachers_mails_keyboard)
