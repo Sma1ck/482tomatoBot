@@ -21,11 +21,11 @@ async def show_commands(message: Message):
 
 @dp.message_handler(text='Расписание на сегодня')
 async def show_today_schedule(message: Message):
-    '''
+    """
     Возвращает расписание на один день(сегодня)
     :param message:
     :return:
-    '''
+    """
     from config import schedule_even, schedule_odd
     from datetime import datetime
     week_count = datetime.now().isocalendar()[1]
@@ -51,11 +51,11 @@ async def show_today_schedule(message: Message):
 
 @dp.message_handler(text='Расписание на завтра')
 async def show_tomorrow_schedule(message: Message):
-    '''
+    """
     Вывод расписания на следующую неделю
     :param message:
     :return:
-    '''
+    """
     from config import schedule_even, schedule_odd
     from datetime import datetime
     week_count = datetime.now().isocalendar()[1]
@@ -83,11 +83,11 @@ async def show_tomorrow_schedule(message: Message):
 
 @dp.message_handler(text='Расписание на неделю')
 async def show_week_schedule(message: Message):
-    '''
+    """
     Возвращает расписание на всю неделю
     :param message:
     :return:
-    '''
+    """
     from config import schedule_even, schedule_odd, weekdays_iteration
     from datetime import datetime
     week_count = datetime.now().isocalendar()[1]
@@ -114,11 +114,11 @@ async def show_week_schedule(message: Message):
 
 @dp.message_handler(text='Расписание на следующую неделю')
 async def show_week_schedule(message: Message):
-    '''
+    """
     Возвращает расписание на всю следующую неделю
     :param message:
     :return:
-    '''
+    """
     from config import schedule_even, schedule_odd, weekdays_iteration
     from datetime import datetime
     week_count = datetime.now().isocalendar()[1] + 1
@@ -145,11 +145,11 @@ async def show_week_schedule(message: Message):
 
 @dp.message_handler(text='Полезные ссылки')
 async def show_useful_links(message: Message):
-    '''
+    """
     Дает ссылки на самые важные сайты или полезные для учебы сайты
     :param message:
     :return:
-    '''
+    """
     from config import links_keyboard
     text = 'Выбери необходимый сервис:'
     await message.answer(text=text, reply_markup=links_keyboard)
@@ -157,11 +157,11 @@ async def show_useful_links(message: Message):
 
 @dp.callback_query_handler(lambda c: c.data and c.data.startswith('btn'))
 async def process_callback_kb1btn1(callback_query: callback_query):
-    '''
+    """
     Ловим колбэки от кнопок и выводим информацию
     :param callback_query:
     :return:
-    '''
+    """
     code = callback_query.data[4:]
     if code == 'gmail_info':
         await bot.send_message(callback_query.from_user.id, 'login: 482groupp@gmail.com \npassword: 999999999group')
@@ -177,14 +177,17 @@ async def process_callback_kb1btn1(callback_query: callback_query):
         await bot.send_message(callback_query.from_user.id, 'ekaterina_borisova@technolog.edu.ru')
     if code == 'sociology':
         await bot.send_message(callback_query.from_user.id, 'djv475@mail.ru')
+    if code == 'SAU':
+        await bot.send_message(callback_query.from_user.id, '7504440ns@mail.ru')
+
 
 @dp.message_handler(text='Данные от сервисов')
 async def show_mail_info(message: Message):
-    '''
+    """
     Вывод кнопок для данных от почт
     :param message:
     :return:
-    '''
+    """
     from config import mail_info_keyboard
     text = 'Выбери почту, от которой нужны данные:'
     await message.answer(text=text, reply_markup=mail_info_keyboard)
@@ -192,11 +195,11 @@ async def show_mail_info(message: Message):
 
 @dp.message_handler(text='Назад')
 async def back_to_global_menu(message: Message):
-    '''
+    """
     Возврат к главному меню
     :param message:
     :return:
-    '''
+    """
     await message.answer(text='Главное меню', reply_markup=global_menu)
 
 

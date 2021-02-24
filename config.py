@@ -92,9 +92,12 @@ google_drive481_btn = InlineKeyboardButton('Гугл диск 482', url='https:/
 google_drive481_482_btn = InlineKeyboardButton('Гугл диск 481-482', url='https://drive.google.com/drive/folders/1ekq_IUs32KSZ9hO5nKxwPU-p7Wh0WYMx')
 sociology_drive_btn = InlineKeyboardButton('Облако социология', url='https://cloud.mail.ru/public/9fzv/Jeuri1J2Q/')
 gmail_btn = InlineKeyboardButton('Гугл почта', url='https://mail.google.com/mail/u/2/?tab=om#inbox')
+mailru_cloud_btn = InlineKeyboardButton('Mail.ru cloud', url='https://cloud.mail.ru/home/')
+mailru_btn = InlineKeyboardButton('Mail.ru почта', url='https://e.mail.ru/inbox/?back=1')
 links_keyboard.row(media_btn, moodle_btn)
 links_keyboard.row(google_drive481_btn, gmail_btn)
 links_keyboard.row(google_drive481_482_btn, sociology_drive_btn)
+links_keyboard.row(mailru_btn, mailru_cloud_btn)
 
 # Клавиатура для данных от почты
 mail_info_keyboard = InlineKeyboardMarkup()
@@ -107,13 +110,15 @@ teachers_mails_keyboard = InlineKeyboardMarkup()
 fokin_btn = InlineKeyboardButton('Фокин Александр Леонидович(ТАУ)', callback_data='btn_fokin')
 kurkina_btn = InlineKeyboardButton('Куркина Виктория Вадимовна', callback_data='btn_kurkina')
 csharp_btn = InlineKeyboardButton('C#', callback_data='btn_C#')
-borisova_btn = InlineKeyboardButton('Борисова Екатерина Игоревна', callback_data='btn_borisova')
+borisova_btn = InlineKeyboardButton('Борисова Екатерина Игоревна(ПиА)', callback_data='btn_borisova')
 sociology_btn = InlineKeyboardButton('Социология', callback_data='btn_sociology')
+SAU_btn = InlineKeyboardButton('Сягаев Николай Андреевич(САУ)', callback_data='btn_SAU')
 teachers_mails_keyboard.add(fokin_btn)
 teachers_mails_keyboard.add(kurkina_btn)
 teachers_mails_keyboard.add(csharp_btn)
 teachers_mails_keyboard.add(borisova_btn)
 teachers_mails_keyboard.add(sociology_btn)
+teachers_mails_keyboard.add(SAU_btn)
 
 
 zoom_menu = ReplyKeyboardMarkup(
